@@ -30,7 +30,7 @@ function getInferenceClient(): GoogleGenAI | null {
     apiKey,
     httpOptions: {
       headers: {
-        'User-Agent': 'aistudio-build',
+        'User-Agent': 'omniguard-xai-engine/2.4.0',
       },
     },
   });
