@@ -1,0 +1,6 @@
+{
+  "name": "OmniGuard XAI Engine",
+  "description": "Autonomous unsupervised anomaly detection, SHAP game-theoretic feature attribution, and cognitive incident remediation platform.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OmniGuardNetworkTelemetryRecord",
+  "type": "object",
+  "required": [
+    "packet_size",
+    "latency_ms",
+    "failed_logins",
+    "bytes_transferred",
+    "port_number"
+  ],
+  "properties": {
+    "packet_size": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 65535,
+      "description": "Network packet size in bytes"
+    },
+    "latency_ms": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Round-trip socket latency in milliseconds"
+    },
+    "failed_logins": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Count of failed authentication attempts in window"
+    },
+    "bytes_transferred": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Cumulative payload bytes transferred in session"
+    },
+    "port_number": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 65535,
+      "description": "Destination TCP/UDP port number"
+    }
+  }
+}
